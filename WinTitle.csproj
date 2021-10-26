@@ -3,16 +3,16 @@
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
     <LangVersion>9.0</LangVersion>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
     <OutputType>Library</OutputType>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <Version>1.0.1.0</Version>
-    <Authors>Azure Gem</Authors>
+    <Authors>Azure Gem/Uiharu</Authors>
     <Product>WindowTitleChanger</Product>
-    <Copyright>Copyright (c) 2021 Azure Gem</Copyright>
-    <Description>Allows you to change your game's window title</Description>
+    <Copyright>Copyright (c) 2021 Azure Gem/Uiharu本地化</Copyright>
+    <Description>修改游戏标题，国服特供版</Description>
     <RepositoryType>GitHub</RepositoryType>
     <RepositoryUrl>https://github.com/rreminy/FFXIV.WinTitle</RepositoryUrl>
     <PackageReleaseNotes></PackageReleaseNotes>
@@ -20,6 +20,7 @@
     <RootNamespace>WinTitle</RootNamespace>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <OutputPath>D:\dalam\XIVLauncher\devPlugins\wintitle\</OutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -33,7 +34,7 @@
 
   <ItemGroup>
     <Reference Include="Dalamud">
-      <HintPath>$(AppData)\XIVLauncher\addon\Hooks\dev\Dalamud.dll</HintPath>
+      <HintPath>D:\dalam\6.0.0.13\Dalamud.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
