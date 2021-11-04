@@ -3,8 +3,8 @@
   "Name": "修改窗口标题",
   "Description": "修改游戏窗口的标题",
   "InternalName": "WinTitle",
-  "AssemblyVersion": "1.0.1.1",
+  "AssemblyVersion": "1.0.1.2",
   "ApplicableVersion": "any",
-  "RepoUrl": "https://github.com/rreminy/FFXIV.WinTitle",
+  "RepoUrl": "https://github.com/uiharuayako/FFXIV.WinTitle",
   "DalamudApiLevel": 4
 }

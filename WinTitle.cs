@@ -27,7 +27,6 @@ namespace WinTitle
             using Process process = Process.GetCurrentProcess();
             this.Handle = process.MainWindowHandle;
             this.OriginalTitle = process.MainWindowTitle;
-
             this.commandManager = commandManager;
 
             this.commandManager.AddHandler("/wintitle", new CommandInfo(WintitleCommand)
@@ -84,7 +83,15 @@ namespace WinTitle
             if (string.IsNullOrWhiteSpace(title)) title = "最终幻想XIV";
             try
             {
-                SetWindowText(this.Handle, title + GetHanNumFromString(title));
+                if (this.OriginalTitle.Equals("最终幻想XIV"))
+                {
+                    SetWindowText(this.Handle, title);
+                }
+                else
+                {
+
+                    SetWindowText(this.Handle, title + GetHanNumFromString(title));
+                }
             }
             catch (Exception ex)
             {
